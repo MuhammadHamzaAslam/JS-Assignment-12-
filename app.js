@@ -1,7 +1,7 @@
 // Assignment 1
 
 let arr = [1,2,3,4,5,6,7,8,9,10]
-document.write(arr,"<br>")
+document.write("<h1>","Orignal Array",arr,"<br>","</h1>")
 let empty = []
 for (var i = 0; i < arr.length; i++) {
  if (arr[i] % 3 == 0 ) {
@@ -16,7 +16,7 @@ else {
     empty.push(arr[i]);
   }
 }
-document.write(empty,"<br>");
+document.write("<h2>",empty,"<br>","</h2>");
 
 
 
@@ -38,15 +38,15 @@ document.write(arr3,"<br>")
 // Q2
 
 
-let name1 = 'hamza' 
+let name1 = prompt("Enter a word to reverse it") 
 let name2 = name1.split('')
 let name3 = name2.reverse()
 let name4 = name3.join('') 
-document.write(name4,"<br>")
+document.write("The reverse of ",name1," is ",name4,"<br>")
 
 // Q3
 
-let num = prompt('Enter a number')
+let num = prompt('Enter a number to check its prime number or not')
 let flag = false 
 for (var i = 2; i < num; i++) {
   if (num % i == 0) {
@@ -66,7 +66,7 @@ if (flag == true) {
 
 //Q5
 
-let name11 = 'mom' 
+let name11 = prompt("Enter a word to check its palindrome word or not") 
 let name22 = name11.split('')
 let name33 = name22.reverse()
 let name44 = name33.join('') 
@@ -79,12 +79,6 @@ else{
   document.write(name11,' Is not a palindrome word',"<br>")
 }
 
-let vowels = ["a","e","i","o","u"]
-let len = []
-for(var i =0 ; i < vowels.length ; i++){
-    len.push(i);
-}
-document.write(len.length,"<br>");
 
 let number  = parseInt(prompt("Enter a Number to take its factorial"))
 let emp = 1;
@@ -98,3 +92,59 @@ document.write(emp,"<br>");
 let list = [1,2,3,4,5,6,7,8,9,10]
 document.write(list.reverse(),"<br>");
 
+// Fibonacci series
+let a = 0
+let b = 1
+document.write(`<h1>Fibonacci Series </h1> <br>`)
+document.write(a,"<br>")
+document.write(b,"<br>")
+for(var i = 0 ; i < 10 ; i++){
+  var temp = a + b
+  document.write(temp,"<br>")
+  a = b 
+  b = temp
+  
+}
+
+let name667 = 'Hello my name is Hamza' 
+let nA = 0
+let nE = 0
+let nI = 0
+let nO = 0
+let nU = 0
+for(var i = 0 ; i < name667.length ; i++){
+  //console.log(name667[i])
+  if (name667[i].toLowerCase() == 'a') {
+   nA++ 
+  }
+  else if (name667[i].toLowerCase() == 'e') {
+    nE++
+  }
+  else if (name667[i].toLowerCase() == 'i') {
+    nI++
+  }
+  else if (name667[i].toLowerCase() == 'o') {
+    nO++
+  }
+  else if (name667[i].toLowerCase() == 'u') {
+    nU++
+  }
+}
+/*console.log(nA)
+console.log(nE)
+console.log(nI)
+console.log(nO)
+console.log(nU)*/
+var plus = nA + nE + nI + nO + nU
+document.write(plus,"<br>")
+
+
+
+
+
+let number112 = prompt("Enter an integer to check sum oof digits");
+let sum = 0;
+for (let i = 0; i < number112.length; i++) {
+    sum += parseInt(number112[i]);
+}
+document.write("Sum of digits:", sum);
