@@ -141,10 +141,3 @@ document.write(plus,"<br>")
 
 
 
-
-let number112 = prompt("Enter an integer to check sum oof digits");
-let sum = 0;
-for (let i = 0; i < number112.length; i++) {
-    sum += parseInt(number112[i]);
-}
-document.write("Sum of digits:", sum);
